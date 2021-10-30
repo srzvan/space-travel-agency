@@ -35,7 +35,7 @@
 /* Colors */
 
 .bg-dark {
-  color: hsl(var(--clr-dark));
+  background-color: hsl(var(--clr-dark));
 }
 
 .bg-accent {
