@@ -27,11 +27,25 @@ picture {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 /* Body setup */
 
 body {
   line-height: 1.5;
   min-height: 100vh;
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
+  font-size: var(--fs-400);
+  font-family: var(--ff-sans-normal);
 }
 
 /* Images setup */

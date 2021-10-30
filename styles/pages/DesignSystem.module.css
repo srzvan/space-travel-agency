@@ -1,3 +1,7 @@
 .colors > * {
   flex-grow: 1;
 }
+
+.number {
+  color: hsl(var(--clr-white) / 0.2);
+}
