@@ -17,7 +17,7 @@
 .container {
   padding-inline: 2em;
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 75rem;
 }
 
 .sr-only {
@@ -49,6 +49,9 @@
 }
 .text-accent {
   color: hsl(var(--clr-light));
+}
+.text-accent-faded {
+  color: hsl(var(--clr-light) / 0.5);
 }
 .text-white {
   color: hsl(var(--clr-white));
