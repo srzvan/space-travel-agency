@@ -113,3 +113,18 @@
 .fs-600 {
   line-height: 1.1;
 }
+
+.numbered-title {
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  letter-spacing: 4.75px;
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  font-family: var(--ff-sans-cond);
+}
+
+.numbered-title > span {
+  margin-right: 1em;
+  font-weight: 700;
+  color: hsl(var(--clr-white) / 0.25);
+}

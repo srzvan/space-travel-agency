@@ -1,6 +1,6 @@
-export default function Grid({ children, gap }) {
+export default function Grid({ children, className, gap, style }) {
   return (
-    <div className="grid" style={{ "--gap": `${gap}` }}>
+    <div className={className ? `${className} grid` : "grid"} style={{ ...style, "--gap": `${gap}` }}>
       {children}
     </div>
   );

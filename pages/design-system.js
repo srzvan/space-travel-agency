@@ -9,8 +9,8 @@ export default function DesignSystem() {
         Design system
       </h1>
       <section id="colors" style={{ marginBottom: "9.25rem" }}>
-        <h2 className="ff-sans-cond fs-500 uppercase letter-spacing-1">
-          <span className={styles.number}>01</span> colors
+        <h2 className="numbered-title">
+          <span>01</span>colors
         </h2>
         <div className={`${styles.colors} flex`}>
           <Grid gap="0.5rem">
@@ -50,11 +50,11 @@ export default function DesignSystem() {
       </section>
 
       <section id="typography">
-        <h2 className="ff-sans-cond fs-500 uppercase letter-spacing-1">
-          <span className={styles.number}>02</span> typography
+        <h2 className="numbered-title">
+          <span>02</span>typography
         </h2>
         <div className="flex">
-          <div style={{ flexBasis: "100%" }}>
+          <Grid gap="1.5rem" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p className="ff-serif fs-900 uppercase">Earth</p>
@@ -77,9 +77,9 @@ export default function DesignSystem() {
                 So, you want to travel to space
               </p>
             </div>
-          </div>
+          </Grid>
 
-          <div style={{ flexBasis: "100%" }}>
+          <Grid gap="2.5rem" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p className="fs-500 ff-serif">384,400 km</p>
@@ -106,7 +106,7 @@ export default function DesignSystem() {
                 mattis vel, nisi.
               </p>
             </div>
-          </div>
+          </Grid>
         </div>
       </section>
     </div>
