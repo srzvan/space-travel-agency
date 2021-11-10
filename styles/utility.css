@@ -14,6 +14,13 @@
   gap: var(--gap, 1rem);
 }
 
+/*
+  The difference between :is() and :where() is that :where() does not bump the specificity, whereas :is() will add the highest specificity from it's arguments to the current selector.
+*/
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
 .container {
   padding-inline: 2em;
   margin-inline: auto;

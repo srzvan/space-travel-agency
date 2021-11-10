@@ -1,4 +1,4 @@
-import Grid from "components/design-system/Grid";
+import Flow from "components/design-system/Flow";
 
 import styles from "styles/pages/DesignSystem.module.css";
 
@@ -13,7 +13,7 @@ export default function DesignSystem() {
           <span>01</span>colors
         </h2>
         <div className={`${styles.colors} flex`}>
-          <Grid gap="0.5rem">
+          <Flow spacing="0.5rem">
             <div style={{ padding: "3rem 1rem 1rem", border: "1px solid white" }} className="ff-serif fs-500">
               #0B0D17
             </div>
@@ -23,8 +23,8 @@ export default function DesignSystem() {
             <p>
               <span className="text-accent">HSL</span> 230°, 35%, 7%
             </p>
-          </Grid>
-          <Grid gap="0.5rem">
+          </Flow>
+          <Flow spacing="0.5rem">
             <div style={{ padding: "3rem 1rem 1rem" }} className="text-dark bg-accent ff-serif fs-500">
               #0B0D17
             </div>
@@ -34,8 +34,8 @@ export default function DesignSystem() {
             <p>
               <span className="text-accent">HSL</span> 231°, 77%, 90%
             </p>
-          </Grid>
-          <Grid gap="0.5rem">
+          </Flow>
+          <Flow spacing="0.5rem">
             <div style={{ padding: "3rem 1rem 1rem" }} className="text-dark  bg-white ff-serif fs-500">
               #FFFFFF
             </div>
@@ -45,7 +45,7 @@ export default function DesignSystem() {
             <p>
               <span className="text-accent">HSL</span> 0°, 0%, 100%
             </p>
-          </Grid>
+          </Flow>
         </div>
       </section>
 
@@ -54,7 +54,7 @@ export default function DesignSystem() {
           <span>02</span>typography
         </h2>
         <div className="flex">
-          <Grid gap="1.5rem" style={{ flexBasis: "100%" }}>
+          <Flow spacing="1.5rem" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p className="ff-serif fs-900 uppercase">Earth</p>
@@ -77,9 +77,9 @@ export default function DesignSystem() {
                 So, you want to travel to space
               </p>
             </div>
-          </Grid>
+          </Flow>
 
-          <Grid gap="2.5rem" style={{ flexBasis: "100%" }}>
+          <Flow spacing="2.5rem" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p className="fs-500 ff-serif">384,400 km</p>
@@ -106,7 +106,7 @@ export default function DesignSystem() {
                 mattis vel, nisi.
               </p>
             </div>
-          </Grid>
+          </Flow>
         </div>
       </section>
     </div>
