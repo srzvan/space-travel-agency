@@ -135,3 +135,42 @@
   font-weight: 700;
   color: hsl(var(--clr-white) / 0.25);
 }
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.large-button,
+.large-button--idle {
+  padding: 0 2em;
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.large-button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scale(1);
+  border-radius: inherit;
+  transform-origin: 50% 50%;
+  transition: opacity 250ms linear, transform 400ms ease-in;
+  background-color: hsl(var(--clr-white) / 0.1);
+  opacity: 0;
+  z-index: -1;
+}
+
+.large-button:focus {
+  outline: none;
+}
+
+.large-button:hover:after,
+.large-button:focus:after {
+  opacity: 1;
+  transform: scale(1.5);
+}

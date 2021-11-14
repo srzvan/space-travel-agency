@@ -8,6 +8,7 @@ export default function DesignSystem() {
       <h1 className="ff-sans-cond uppercase" style={{ marginBottom: "6.25rem" }}>
         Design system
       </h1>
+
       <section id="colors" style={{ marginBottom: "9.25rem" }}>
         <h2 className="numbered-title">
           <span>01</span>colors
@@ -49,7 +50,7 @@ export default function DesignSystem() {
         </div>
       </section>
 
-      <section id="typography">
+      <section id="typography" style={{ marginBottom: "11.25rem" }}>
         <h2 className="numbered-title">
           <span>02</span>typography
         </h2>
@@ -108,6 +109,49 @@ export default function DesignSystem() {
             </div>
           </Flow>
         </div>
+      </section>
+
+      <section id="interactive-elements">
+        <h2 className="numbered-title">
+          <span>02</span>interactive elements
+        </h2>
+        {/* Navigation */}
+        <Flow spacing="4.6875rem">
+          <div>
+            <h3 className="ff-sans-normal fs-400 text-accent" style={{ textAlign: "center" }}>
+              Different States of Navigation Bar
+            </h3>
+          </div>
+          <div className="flex">
+            {/* Explore button */}
+            <div style={{ flexBasis: "100%", textAlign: "center" }}>
+              <Flow spacing="0.8125rem" style={{ marginBottom: "5.75rem" }}>
+                <a
+                  href="#"
+                  className="ff-serif fs-600 uppercase text-dark bg-white letter-spacing-3 large-button--idle"
+                >
+                  Explore
+                </a>
+                <h3 className="fs-400 ff-sans-normal text-accent">Landing Page Main Button - Idle</h3>
+              </Flow>
+
+              <Flow spacing="5.25rem">
+                <a href="#" className="ff-serif fs-600 uppercase text-dark bg-white letter-spacing-3 large-button">
+                  Explore
+                </a>
+                <h3 className="fs-400 ff-sans-normal text-accent">Landing Page Main Button - Hover</h3>
+              </Flow>
+            </div>
+            <div style={{ flexBasis: "100%" }}>
+              {/* Tabs */}
+
+              <div></div>
+              {/* Dots */}
+
+              {/* Numbers */}
+            </div>
+          </div>
+        </Flow>
       </section>
     </div>
   );
