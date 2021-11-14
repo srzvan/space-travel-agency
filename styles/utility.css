@@ -174,3 +174,39 @@
   opacity: 1;
   transform: scale(1.5);
 }
+
+.primary-navigation {
+  --gap: 8rem;
+  --underline-padding: 2.1875rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.1875;
+  background-color: hsl(var(--clr-white) / 0.04);
+}
+
+.primary-navigation a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.primary-navigation a > span {
+  margin-right: 0.6875em;
+  font-weight: 700;
+}
+
+.underline-indicators > * {
+  padding: var(--underline-padding, 1rem) 0;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2125s ease-in;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: hsl(var(--clr-white) / 0.5);
+}
+
+.underline-indicators > .active {
+  border-color: hsl(var(--clr-white));
+}

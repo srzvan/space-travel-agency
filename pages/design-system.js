@@ -117,11 +117,33 @@ export default function DesignSystem() {
         </h2>
         {/* Navigation */}
         <Flow spacing="4.6875rem">
-          <div>
+          <Flow spacing="2rem">
+            <nav>
+              <ul
+                className="fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation"
+                style={{ justifyContent: "center" }}
+              >
+                <li className="active">
+                  <a href="#">
+                    <span>00</span> active
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>01</span> hovered
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>02</span> idle
+                  </a>
+                </li>
+              </ul>
+            </nav>
             <h3 className="ff-sans-normal fs-400 text-accent" style={{ textAlign: "center" }}>
               Different States of Navigation Bar
             </h3>
-          </div>
+          </Flow>
           <div className="flex">
             {/* Explore button */}
             <div style={{ flexBasis: "100%", textAlign: "center" }}>
