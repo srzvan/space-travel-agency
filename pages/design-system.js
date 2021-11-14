@@ -146,8 +146,8 @@ export default function DesignSystem() {
           </Flow>
           <div className="flex">
             {/* Explore button */}
-            <div style={{ flexBasis: "100%", textAlign: "center" }}>
-              <Flow spacing="0.8125rem" style={{ marginBottom: "5.75rem" }}>
+            <Flow spacing="5.75rem" style={{ flexBasis: "100%", textAlign: "center" }}>
+              <Flow spacing="0.8125rem">
                 <a
                   href="#"
                   className="ff-serif fs-600 uppercase text-dark bg-white letter-spacing-3 large-button--idle"
@@ -163,15 +163,37 @@ export default function DesignSystem() {
                 </a>
                 <h3 className="fs-400 ff-sans-normal text-accent">Landing Page Main Button - Hover</h3>
               </Flow>
-            </div>
-            <div style={{ flexBasis: "100%" }}>
+            </Flow>
+            <Flow spacing="7.5rem" style={{ flexBasis: "100%" }}>
               {/* Tabs */}
-
-              <div></div>
+              <Flow spacing="1.5rem" style={{ textAlign: "center" }}>
+                <div
+                  className="ff-sans-cond fs-300 letter-spacing-2 text-accent uppercase flex underline-indicators tab-list"
+                  style={{ justifyContent: "center" }}
+                >
+                  <button aria-selected="true">Moon</button>
+                  <button aria-selected="false">Mars</button>
+                  <button aria-selected="false">Europa</button>
+                </div>
+                <h3 className="fs-400 ff-sans-normal text-accent">Tabs (Active, Hover, & Idle)</h3>
+              </Flow>
               {/* Dots */}
-
+              <Flow style={{ textAlign: "center" }}>
+                <div className="dot-indicators flex" style={{ justifyContent: "center" }}>
+                  <button aria-selected="true">
+                    <span className="sr-only">Slide title</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span className="sr-only">Slide title</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span className="sr-only">Slide title</span>
+                  </button>
+                </div>
+                <h3 className="fs-400 ff-sans-normal text-accent">Slider 1 States (Active, Hover, & Idle)</h3>
+              </Flow>
               {/* Numbers */}
-            </div>
+            </Flow>
           </div>
         </Flow>
       </section>
