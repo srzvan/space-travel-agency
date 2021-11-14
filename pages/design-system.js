@@ -50,7 +50,7 @@ export default function DesignSystem() {
         </div>
       </section>
 
-      <section id="typography" style={{ marginBottom: "11.25rem" }}>
+      <section id="typography" style={{ marginBottom: "10rem" }}>
         <h2 className="numbered-title">
           <span>02</span>typography
         </h2>
@@ -164,7 +164,7 @@ export default function DesignSystem() {
                 <h3 className="fs-400 ff-sans-normal text-accent">Landing Page Main Button - Hover</h3>
               </Flow>
             </Flow>
-            <Flow spacing="7.5rem" style={{ flexBasis: "100%" }}>
+            <Flow spacing="4.75rem" style={{ flexBasis: "100%" }}>
               {/* Tabs */}
               <Flow spacing="1.5rem" style={{ textAlign: "center" }}>
                 <div
@@ -193,6 +193,26 @@ export default function DesignSystem() {
                 <h3 className="fs-400 ff-sans-normal text-accent">Slider 1 States (Active, Hover, & Idle)</h3>
               </Flow>
               {/* Numbers */}
+              <Flow style={{ textAlign: "center" }}>
+                <div
+                  className="ff-serif fs-600 flex number-indicators"
+                  style={{ flexDirection: "column", alignItems: "center" }}
+                >
+                  <button aria-selected="true">
+                    <span className="sr-only">Slide</span>
+                    <span>1</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span className="sr-only">Slide</span>
+                    <span>2</span>
+                  </button>
+                  <button aria-selected="false">
+                    <span className="sr-only">Slide</span>
+                    <span>3</span>
+                  </button>
+                </div>
+                <h3 className="fs-400 ff-sans-normal text-accent">Slider 2 States (Active, Hover, & Idle)</h3>
+              </Flow>
             </Flow>
           </div>
         </Flow>
