@@ -1,4 +1,4 @@
-import Flow from "components";
+import Flow from "components/Flow";
 
 import styles from "styles/pages/DesignSystem.module.css";
 
