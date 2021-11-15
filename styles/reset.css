@@ -46,6 +46,13 @@ body {
   background-color: hsl(var(--clr-dark));
   font-size: var(--fs-400);
   font-family: var(--ff-sans-normal);
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+#__next {
+  display: inherit;
+  grid-template-rows: min-content 1fr;
 }
 
 /* Images setup */
