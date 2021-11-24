@@ -20,8 +20,8 @@
 
   /* font-families */
   --ff-serif: "Bellefair", serif;
-  --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
 }
 
 @media (min-width: 35em) {
@@ -35,7 +35,6 @@
 
 @media (min-width: 45em) {
   :root {
-    /* font-sizes */
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;

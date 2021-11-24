@@ -36,7 +36,7 @@ export default function Home() {
           </ul>
         </nav> */}
       </header>
-      <main className="grid-container">
+      <main className="grid-container grid-container--home">
         <Flow>
           <h1 className="ff-sans-cond fs-500 letter-spacing-1 text-accent uppercase flow">
             <span>So, you want to travel to</span>
@@ -51,12 +51,7 @@ export default function Home() {
         </Flow>
         <div>
           <Link href="/destinations">
-            <a
-              className="ff-serif fs-600 uppercase text-dark bg-white letter-spacing-3 large-button"
-              style={{ flexBasis: 0 }}
-            >
-              Explore
-            </a>
+            <a className="ff-serif uppercase text-dark bg-white letter-spacing-3 large-button">Explore</a>
           </Link>
         </div>
       </main>
