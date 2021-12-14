@@ -4,7 +4,7 @@ import styles from "styles/pages/DesignSystem.module.css";
 
 export default function DesignSystem() {
   return (
-    <div className="container text-white" style={{ padding: "4rem 0" }}>
+    <div className="container text-white" style={{ paddingBlock: "4rem" }}>
       <h1 className="ff-sans-cond uppercase" style={{ marginBottom: "6.25rem" }}>
         Design system
       </h1>
