@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Flow from "components/Flow";
+import MainNavigation from "components/MainNavigation";
 
 import styles from "styles/pages/Index.module.css";
 
@@ -25,30 +26,7 @@ export default function Home() {
         <div>
           <Image src="/shared/logo.svg" alt="Space tourism logo" width="50" height="50" />
         </div>
-        {/* <nav>
-          <ul className="fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation">
-            <li>
-              <Link href="/">
-                <a>00 Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/destination">
-                <a>01 Destination</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/crew">
-                <a>02 Crew</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/technology">
-                <a>03 Technology</a>
-              </Link>
-            </li>
-          </ul>
-        </nav> */}
+        <MainNavigation />
       </header>
       <main className="grid-container grid-container--home">
         <Flow>
