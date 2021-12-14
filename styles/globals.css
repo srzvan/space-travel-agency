@@ -41,3 +41,11 @@
     --fs-400: 1.125rem;
   }
 }
+
+/* ----------------------------- */
+/* Page specific background      */
+/* ----------------------------- */
+body {
+  background-size: cover;
+  background-position: bottom center;
+}

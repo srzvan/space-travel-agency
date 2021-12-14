@@ -1,9 +1,23 @@
+import * as React from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
 import Flow from "components/Flow";
 
+import styles from "styles/pages/Index.module.css";
+
 export default function Home() {
+  React.useEffect(() => {
+    const body = document.querySelector("body");
+
+    body.classList.add(styles.body);
+
+    return () => {
+      body.classList.remove(styles.body);
+    };
+  }, []);
+
   return (
     <>
       <header className="flex" style={{ justifyContent: "space-between" }}>

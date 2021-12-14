@@ -1,0 +1,16 @@
+.body {
+  background-image: url("../../public/home/background-home-mobile.jpg");
+}
+
+@media (min-width: 35rem) {
+  .body {
+    background-position: center center;
+    background-image: url("../../public/home/background-home-tablet.jpg");
+  }
+}
+
+@media (min-width: 45rem) {
+  .body {
+    background-image: url("../../public/home/background-home-desktop.jpg");
+  }
+}
