@@ -1,4 +1,5 @@
 import Link from "next/link";
+import * as React from "react";
 import { useRouter } from "next/router";
 
 const LINKS = [
@@ -23,17 +24,30 @@ const LINKS = [
 export default function MainNavigation() {
   const { pathname } = useRouter();
 
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  function handleMobileNavToggle() {
+    setIsOpen(prevState => !prevState);
+  }
+
   return (
     <>
-      <button className="mobile-nav-toggle" aria-controls="primary-navigation">
-        <span className="sr-only" aria-expanded="false">
+      <button
+        onClick={handleMobileNavToggle}
+        aria-controls="primary-navigation"
+        className={`mobile-nav-toggle${isOpen ? " open" : ""}`}
+      >
+        <span className="sr-only" aria-expanded={isOpen}>
           Main navigation
         </span>
       </button>
+
       <nav>
         <ul
           id="primary-navigation"
-          className="fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation"
+          className={`fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation${
+            isOpen ? " open" : ""
+          }`}
         >
           {LINKS.map(({ href, text }) => (
             <li key={href} className={pathname === href ? "active" : undefined}>

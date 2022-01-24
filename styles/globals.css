@@ -46,6 +46,7 @@
 /* Page specific background      */
 /* ----------------------------- */
 body {
+  overflow-x: hidden;
   background-size: cover;
   background-position: bottom center;
 }
