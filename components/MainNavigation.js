@@ -24,30 +24,28 @@ const LINKS = [
 export default function MainNavigation() {
   const { pathname } = useRouter();
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(false);
 
   function handleMobileNavToggle() {
-    setIsOpen(prevState => !prevState);
+    setIsVisible(prevState => !prevState);
   }
 
   return (
     <>
       <button
+        aria-expanded={isVisible}
+        className="mobile-nav-toggle"
         onClick={handleMobileNavToggle}
         aria-controls="primary-navigation"
-        className={`mobile-nav-toggle${isOpen ? " open" : ""}`}
       >
-        <span className="sr-only" aria-expanded={isOpen}>
-          Main navigation
-        </span>
+        <span className="sr-only">Main navigation</span>
       </button>
 
       <nav>
         <ul
           id="primary-navigation"
-          className={`fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation${
-            isOpen ? " open" : ""
-          }`}
+          data-visible={isVisible}
+          className="fs-300 ff-sans-cond letter-spacing-2 text-white uppercase flex underline-indicators primary-navigation"
         >
           {LINKS.map(({ href, text }) => (
             <li key={href} className={pathname === href ? "active" : undefined}>

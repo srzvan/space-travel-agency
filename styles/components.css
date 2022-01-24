@@ -73,7 +73,7 @@
     transition: transform 0.175s ease-in-out;
   }
 
-  .primary-navigation.open {
+  .primary-navigation[data-visible="true"] {
     transform: translateX(0);
   }
 
@@ -103,12 +103,12 @@
     background: transparent;
     background-image: url("../public/shared/icon-hamburger.svg");
     background-repeat: no-repeat;
+    background-position: center;
     display: block;
     z-index: 3;
   }
 
-  .mobile-nav-toggle.open {
-    width: 1.1875rem;
+  .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url("../public/shared/icon-close.svg");
   }
 }
