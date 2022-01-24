@@ -111,6 +111,11 @@
   .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url("../public/shared/icon-close.svg");
   }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 3px solid hsl(var(--clr-white));
+    outline-offset: 3px;
+  }
 }
 
 .primary-navigation a {
